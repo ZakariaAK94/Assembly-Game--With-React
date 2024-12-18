@@ -37,24 +37,34 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/ZakariaAK94/Assembly-Game--With-React.git
    cd Assembly-Game--With-React
+
 2. **Navigate to directory:**
+  ```bash
    cd Assembly-Game--With-React
+
 3. **Install dependencies:**
+  ```bash
    npm install
+
 4. **Start the development server:**
+   ```bash
    npm run dev
+
 5. **The website will be accessible at**
+
    http://localhost:3000
 
 ## Usage
- 1- Visit the Demo Page.
- 2- Explore the game and interact with the features.
- 3- Use the source code as a reference for learning React or as a starting point for your projects.
+
+ * Visit the Demo Page.
+ * Explore the game and interact with the features.
+ * Use the source code as a reference for learning React or as a starting point for your projects.
 
 ## Acknowledgements
-React.js - The library used for building the UI.
-Vite - For fast development and build processes.
-GitHub Pages - For hosting the demo.
+
+<p><strong>React.js</strong> - The library used for building the UI.</p>
+<p><strong>Vite</strong> - For fast development and build processes.</p>
+<p><strong>GitHub Pages</strong> - For hosting the demo.</p>
 
 ## License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project as per the license terms.
+This project is licensed under the [MIT License]. You are free to use, modify, and distribute this project as per the license terms.
