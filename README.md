@@ -34,21 +34,24 @@ Check out the live version of the game here:
 Follow these steps to set up the project locally:
 
 1. **Clone the Repository:**
-   ```bash
+   ```
    git clone https://github.com/ZakariaAK94/Assembly-Game--With-React.git
    cd Assembly-Game--With-React
-
+   ```
 2. **Navigate to directory:**
-  ```bash
+  ```
    cd Assembly-Game--With-React
+  ```
 
 3. **Install dependencies:**
-  ```bash
+  ```
    npm install
+  ```
 
 4. **Start the development server:**
-   ```bash
+   ```
    npm run dev
+   ```
 
 5. **The website will be accessible at**
 
