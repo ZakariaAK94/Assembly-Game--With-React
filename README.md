@@ -39,14 +39,14 @@ Follow these steps to set up the project locally:
    cd Assembly-Game--With-React
    ```
 2. **Navigate to directory:**
-  ```
+   ```
    cd Assembly-Game--With-React
-  ```
+   ```
 
 3. **Install dependencies:**
-  ```
+   ```
    npm install
-  ```
+   ```
 
 4. **Start the development server:**
    ```
