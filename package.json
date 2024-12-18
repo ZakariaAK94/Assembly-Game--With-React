@@ -1,5 +1,6 @@
 {
   "name": "capstone-project-2",
+  "homepage": "https://ZakariaAK94.gethub.io/Assembly-Game--With-React/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +14,7 @@
     "@huggingface/inference": "^2.8.1",
     "axios": "^1.7.9",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.3.1"
