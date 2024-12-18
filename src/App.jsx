@@ -3,17 +3,11 @@ import { useState } from "react"
 import { clsx } from 'clsx';
 import {getFarewellText, getRandomWord} from './utils' 
 import Confetti from 'react-confetti'
-import { getHintForRandomWord } from "./aiService"
 
-export default function AssemblyEndGame() { 
-  
+export default function AssemblyEndGame() {   
   
   const [currentWord, setCurrentWord] = useState(()=>getRandomWord())
   const [letterGuessedByUser,setletterGuessedByUser] = useState([])
-  const [hint, setHint] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-
-  const [message, setMessage] = useState("");
 
   const wrongGuessCount = letterGuessedByUser.filter( letter => !currentWord.includes(letter)).length
   const lastGuessedLetter = letterGuessedByUser[letterGuessedByUser.length - 1]
@@ -110,27 +104,6 @@ const keyboardElements = alphabet.split('').map(letter =>
         }
     }
 
-    const showMessage =() => {
-    
-      setMessage(`if you use the hint, you will lose 5 attemps, you will have only three attemps to try !!!`);
-    };
-
-    const hideMessage =() => {
-      setMessage("");
-    };
-
-    async function handleGenerateHint() 
-    {
-        setIsLoading(true);
-        const generatedHint = await getHintForRandomWord(currentWord);
-        setHint(generatedHint);
-        for(let i=0; i<5; i++)
-        {
-          setletterGuessedByUser((pre)=>[...pre,i])
-        }
-        setIsLoading(false);
-    }
-
     function resetTheGame()
     {
       setCurrentWord(()=>getRandomWord())
@@ -183,18 +156,7 @@ const keyboardElements = alphabet.split('').map(letter =>
                 .join(" ")}</p>
             
             </section>
-            <section className="game-hint">
-                <button 
-                onClick={handleGenerateHint} 
-                onMouseEnter={showMessage} 
-                onMouseLeave={hideMessage}
-                disabled={isLoading} >
-                  {isLoading ? "Generating Hint..." : "Get a Hint"}
-                  {isLoading && <div className="loader">Loading...</div>}
-                </button>
-                {message && <p className="hint">{message}</p>}
-                {hint && <p className="hint">Hint: {hint}</p>}
-           </section>
+            
           <section className="keyboardElements-section">
             {keyboardElements}
           </section>
