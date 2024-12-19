@@ -36,7 +36,6 @@ Follow these steps to set up the project locally:
 1. **Clone the Repository:**
    ```
    git clone https://github.com/ZakariaAK94/Assembly-Game--With-React.git
-   cd Assembly-Game--With-React
    ```
 2. **Navigate to directory:**
    ```
